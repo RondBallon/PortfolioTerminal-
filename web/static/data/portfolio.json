@@ -1,0 +1,36 @@
+{
+    "projects": [
+        {
+            "name": "ARISTOCATS",
+            "description": "Projet HTML - Gato_el_walko",
+            "url": "https://github.com/RondBallon/ARISTOCATS",
+            "tech": ["HTML"]
+        },
+        {
+            "name": "PHP_Ada",
+            "description": "Projet PHP",
+            "url": "https://github.com/RondBallon/PHP_Ada",
+            "tech": ["PHP"]
+        },
+        {
+            "name": "ExpressProjet",
+            "description": "Projet Express-Pug",
+            "url": "https://github.com/RondBallon/ExpressProjet",
+            "tech": ["JavaScript", "Express", "Pug"]
+        },
+        {
+            "name": "Extension-navigateur-Dinomot",
+            "description": "Extension pour navigateur qui donne les définitions des mots (français / anglais) et garde les sélections en mémoire :)",
+            "url": "https://github.com/RondBallon/Extension-navigateur-Dinomot",
+            "tech": ["JavaScript", "Browser Extension"]
+        },
+        {
+            "name": "Portfolio Terminal",
+            "description": "Portfolio interactif style terminal Unix avec commandes personnalisées",
+            "url": "https://github.com/RondBallon/portfolio-terminal",
+            "tech": ["Go", "JavaScript", "HTML", "CSS"]
+        }
+    ],
+    "github": "https://github.com/RondBallon",
+    "cv": "/static/ress/cv.pdf"
+} 
