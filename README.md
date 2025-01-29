@@ -25,4 +25,13 @@ Ce portfolio simule un terminal Unix pour présenter mon parcours de développeu
 • sudo        - Tentative d'élévation de privilèges
 • 42          - La réponse à tout
 
+## Historique des Commandes
+
+Le terminal conserve un historique des commandes exécutées. Les utilisateurs peuvent naviguer dans cet historique à l'aide des flèches du clavier :
+
+- **Flèche Haut** : Affiche la commande précédente.
+- **Flèche Bas** : Affiche la commande suivante.
+
+Cela permet une utilisation plus fluide et intuitive du terminal, similaire à celle des terminaux classiques.
+
 ## Structure du Projet 

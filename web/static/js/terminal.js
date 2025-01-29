@@ -50,6 +50,10 @@ class Terminal {
         this.cmdButton = document.querySelector('.cmd-button');
         this.setupWindowControls();
         this.printWelcome();  // Affiche le message de bienvenue
+
+        // Historique des commandes
+        this.commandHistory = [];
+        this.historyIndex = -1;
     }
 
     /**
@@ -62,6 +66,26 @@ class Terminal {
                 const command = this.input.value.trim();
                 this.executeCommand(command);
                 this.input.value = '';
+            }
+        });
+
+        // Écouter les événements de touches
+        document.addEventListener('keydown', (event) => {
+            // Vérifier si la touche pressée est la flèche haut
+            if (event.key === 'ArrowUp') {
+                // Si l'index de l'historique est supérieur à 0, afficher la commande précédente
+                if (this.historyIndex > 0) {
+                    this.historyIndex--;
+                    this.input.value = this.commandHistory[this.historyIndex];
+                }
+            } 
+            // Vérifier si la touche pressée est la flèche bas
+            else if (event.key === 'ArrowDown') {
+                // Si l'index de l'historique est inférieur au nombre total de commandes, afficher la commande suivante
+                if (this.historyIndex < this.commandHistory.length - 1) {
+                    this.historyIndex++;
+                    this.input.value = this.commandHistory[this.historyIndex];
+                }
             }
         });
     }
@@ -116,6 +140,12 @@ class Terminal {
             await this.commands[command]();
         } else {
             await this.print(`Commande non reconnue: ${command}. Tapez 'help' pour voir les commandes disponibles.`, 'error');
+        }
+
+        // Ajouter la commande à l'historique
+        if (command) {
+            this.commandHistory.push(command);
+            this.historyIndex = this.commandHistory.length; // Réinitialiser l'index
         }
     }
 
@@ -328,7 +358,7 @@ En cours d'apprentissage :
             this.terminalWindow.style.backgroundImage = '';
         }
         
-        this.print(`Theme changed to: ${this.currentTheme}`, 'info');
+        this.print(`Changement de thème vers: ${this.currentTheme}`, 'info');
     }
 
     printWelcome() {
