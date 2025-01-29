@@ -13,7 +13,7 @@ class Terminal {
         // Chaque commande est associée à une méthode
         this.commands = {
             'help': () => this.showHelp(),          // Affiche l'aide
-            'whoiam': this.whoIAm.bind(this),       // Informations personnelles
+            'whoiam': this.whoIAm.bind(this),       // Informations personnelles // j'ai du bind.
             'projets': () => this.showProjects(),   // Liste des projets
             'cv': () => this.showCV(),              // Ouvre le CV
             'github': () => this.openGithub(),      // Profil GitHub
@@ -36,7 +36,12 @@ class Terminal {
                 background: '#f0f0f0',
                 text: '#1e1e1e',
                 prompt: '#008800'
-            }
+            },
+            warp: {
+                background: 'linear-gradient(to right, #f0f0f0 0%, #f0f0f0 100%)',
+                text: '#1e1e1e',
+                prompt: '#008800'
+            },
         };
         this.currentTheme = 'dark';
 
@@ -311,35 +316,32 @@ En cours d'apprentissage :
         this.currentTheme = themeNames[nextIndex];
         
         const theme = this.themes[this.currentTheme];
-        document.body.style.backgroundColor = theme.background;
+        document.body.style.background = theme.background;
         document.body.style.color = theme.text;
         document.querySelector('.prompt').style.color = theme.prompt;
+        
+        if (this.currentTheme === 'warp') {
+            document.body.style.backgroundImage = 'linear-gradient(to top, rgba(128, 128, 128, 0.8) 0%, rgba(240, 240, 240, 0.8) 100%)';
+            this.terminalWindow.style.backgroundImage = 'linear-gradient(to top, rgba(128, 128, 128, 0.8) 0%, rgba(240, 240, 240, 0.8) 100%)';
+        } else {
+            document.body.style.backgroundImage = '';
+            this.terminalWindow.style.backgroundImage = '';
+        }
         
         this.print(`Theme changed to: ${this.currentTheme}`, 'info');
     }
 
     printWelcome() {
         this.print(`
-Bienvenue sur mon portfolio !
+Bienvenue sur mon portfolio ! 👋 Je suis Clément, développeur web en reconversion professionnelle. 💻
 
-• Qui suis-je ?
+ Mon parcours est un peu atypique : j'ai été menuisier et j'ai travaillé dans la restauration. Ces expériences m'ont appris la précision, l'importance des détails et le travail d'équipe. 
 
-Je suis Clément, développeur web en reconversion professionnelle.
+J'aime particulièrement la phase de conception et la construction de solutions, que ce soit en bois ou en code. 🛠️ 
+ 
+Cette passion pour la création et la résolution de problèmes m'a naturellement conduit vers le développement web. 🚀
 
-• Mon parcours
-
-Mon parcours est un peu atypique : j'ai été menuisier et j'ai travaillé
-dans la restauration. Ces expériences m'ont appris la précision,
-l'importance des détails et le travail d'équipe.
-
-• Ma passion
-
-J'aime particulièrement la phase de conception et la construction de
-solutions, que ce soit en bois ou en code. Cette passion pour la création
-et la résolution de problèmes m'a naturellement conduit vers le
-développement web.
-
-Tapez 'help' pour découvrir les commandes disponibles.`, 'welcome-message', true);
+ Tapez 'help' pour découvrir les commandes disponibles. 📜`, 'welcome-message', true);
     }
 
     show42Answer() {
