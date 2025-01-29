@@ -15,11 +15,16 @@ func main() {
 		log.Fatal(err)
 	}
 
+	handlers.InitialiserHandlers(cheminProjet)
+	cheminProjet, err = obtenirCheminProjet()
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	log.Printf("Chemin racine du projet: %s", cheminProjet)
 	log.Printf("Chemin des fichiers statiques: %s", filepath.Join(cheminProjet, "web/static"))
 	log.Printf("Chemin du template: %s", filepath.Join(cheminProjet, "web/templates/index.html"))
 
-	handlers.InitialiserHandlers(cheminProjet)
 	configurerRoutes(cheminProjet)
 
 	log.Println("Serveur démarré sur http://localhost:8080")
