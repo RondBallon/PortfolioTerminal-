@@ -28,13 +28,13 @@ class Terminal {
         // Configuration des thèmes de couleur
         this.themes = {
             dark: {
-                background: '#1e1e1e',
+                background: '1b263b',
                 text: '#f0f0f0',
                 prompt: '#00ff00'
             },
             light: {
-                background: '#f0f0f0',
-                text: '#1e1e1e',
+                background: '#e9c46a',
+                text: 'e76f51',
                 prompt: '#008800'
             },
             warp: {
@@ -195,7 +195,7 @@ class Terminal {
 • ${project.name}
   📝 Description: ${project.description}
   🛠️  Technologies: ${project.tech.join(", ")}
-  🔗 URL: ${project.url}
+  🔗 URL: <a href="${project.url}" target="_blank" rel="noopener noreferrer">${project.url}</a>
 
 `, "project-item");
             });
@@ -298,9 +298,9 @@ perspective différente sur la conception et la réalisation de projets.
 
     showSkills() {
         this.print(`
-╔═══════════════════════════════════════════════════════════════════╗
-║                    Compétences Techniques                         ║
-╚═══════════════════════════════════════════════════════════════════╝
+             ╔═══════════════════════════════════════════════════════════════════╗
+             ║                    Compétences Techniques                         ║
+             ╚═══════════════════════════════════════════════════════════════════╝
 
 Frontend :
   • JavaScript  ★★★☆☆
@@ -363,13 +363,13 @@ En cours d'apprentissage :
 
     printWelcome() {
         this.print(`
-Bienvenue sur mon portfolio ! 👋 Je suis Clément, développeur web en reconversion professionnelle. 💻
+Bienvenue sur mon portfolio ! 👋 Je suis Clément, développeur web en reconversion professionnelle depuis début 2024. 💻
 
  Mon parcours est un peu atypique : j'ai été menuisier et j'ai travaillé dans la restauration. Ces expériences m'ont appris la précision, l'importance des détails et le travail d'équipe. 
 
 J'aime particulièrement la phase de conception et la construction de solutions, que ce soit en bois ou en code. 🛠️ 
  
-Cette passion pour la création et la résolution de problèmes m'a naturellement conduit vers le développement web. 🚀
+Cette passion pour la création et la résolution de problèmes m'a naturellement conduit vers le développement web. 🚀            
 
  Tapez 'help' pour découvrir les commandes disponibles. 📜`, 'welcome-message', true);
     }
