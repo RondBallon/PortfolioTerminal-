@@ -34,4 +34,11 @@ Le terminal conserve un historique des commandes exécutées. Les utilisateurs p
 
 Cela permet une utilisation plus fluide et intuitive du terminal, similaire à celle des terminaux classiques.
 
+## Déploiement
+
+- **Backend**: Hébergé sur Heroku
+- **Frontend**: Hébergé sur GitHub Pages
+- **Base de données**: Hébergée sur MongoDB Atlas
+- **Déploiement automatique**: Configuré avec GitHub Actions
+
 ## Structure du Projet 
