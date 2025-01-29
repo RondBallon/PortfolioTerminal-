@@ -1,0 +1,24 @@
+# terminal.css
+
+Ce fichier contient les styles CSS pour le portfolio.
+
+## Commentaires par ligne :
+
+1. `body {` : Début des styles pour le corps de la page.
+2. `background-color: #2c2c2c;` : Définit la couleur de fond du corps.
+3. `color: #f0f0f0;` : Définit la couleur du texte.
+4. `margin: 0;` : Supprime les marges par défaut.
+5. `padding: 20px;` : Ajoute un rembourrage de 20 pixels.
+6. `font-family: 'Courier New', monospace;` : Définit la police de caractères.
+7. `display: flex;` : Utilise le modèle de boîte flexible.
+8. `justify-content: center;` : Centre le contenu horizontalement.
+9. `align-items: center;` : Centre le contenu verticalement.
+10. `min-height: 100vh;` : Définit la hauteur minimale à 100% de la hauteur de la fenêtre.
+11. `.terminal-window {` : Début des styles pour le conteneur de la fenêtre du terminal.
+12. `background-color: #1e1e1e;` : Définit la couleur de fond du conteneur.
+13. `border-radius: 6px;` : Arrondit les coins du conteneur.
+14. `box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);` : Ajoute une ombre au conteneur.
+15. `width: 100%;` : Définit la largeur à 100%.
+16. `max-width: 800px;` : Définit la largeur maximale à 800 pixels.
+17. `overflow: hidden;` : Cache le contenu qui dépasse.
+

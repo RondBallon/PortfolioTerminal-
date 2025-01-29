@@ -1,0 +1,17 @@
+# handlers.go
+
+Ce fichier gère toutes les requêtes HTTP du portfolio.
+
+## Commentaires par ligne :
+
+1. `package handlers` : Déclare que ce fichier fait partie du package handlers.
+2. `import (...)` : Importe plusieurs packages nécessaires pour le fonctionnement des gestionnaires.
+3. `var (...)` : Déclare plusieurs variables pour stocker le chemin du projet et le service de portfolio.
+4. `func InitialiserHandlers(chemin string) {` : Déclare la fonction qui initialise les gestionnaires.
+5. `log.Printf(...)` : Journalise l'initialisation avec le chemin donné.
+6. `servicePortfolio = services.NouveauServicePortfolio(...)` : Crée un nouveau service de portfolio.
+7. `func ConfigurerTimeouts(srv *http.Server) {` : Déclare une fonction pour configurer les délais du serveur.
+8. `srv.ReadTimeout = timeout` : Définit le délai de lecture du serveur.
+9. `srv.WriteTimeout = timeout` : Définit le délai d'écriture du serveur.
+10. `srv.IdleTimeout = timeout` : Définit le délai d'inactivité du serveur.
+

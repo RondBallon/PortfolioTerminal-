@@ -1,0 +1,22 @@
+# main.go
+
+Ce fichier contient le point d'entrée de l'application Portfolio Terminal.
+
+## Commentaires par ligne :
+
+1. `package main` : Déclare que ce fichier fait partie du package principal.
+2. `import (...)` : Importe plusieurs packages nécessaires pour le fonctionnement du programme.
+3. `func main() {` : Déclare la fonction principale où l'exécution du programme commence.
+4. `cheminProjet, err := obtenirCheminProjet()` : Appelle une fonction pour obtenir le chemin du projet.
+5. `if err != nil {` : Vérifie si une erreur a été retournée.
+6. `log.Fatal(err)` : Si une erreur est présente, elle est enregistrée et le programme se termine.
+7. `log.Printf(...)` : Journalise le chemin racine du projet.
+8. `handlers.InitialiserHandlers(cheminProjet)` : Appelle une fonction pour initialiser les gestionnaires avec le chemin du projet.
+9. `configurerRoutes(cheminProjet)` : Appelle une fonction pour configurer les routes du serveur.
+10. `http.ListenAndServe(...)` : Démarre le serveur HTTP sur le port 8080.
+11. `func obtenirCheminProjet() (string, error) {` : Déclare une fonction qui retourne le chemin du projet.
+12. `return filepath.Abs(cheminActuel)` : Retourne le chemin absolu du projet.
+13. `func configurerRoutes(cheminProjet string) {` : Déclare une nouvelle fonction pour configurer les routes du serveur.
+14. `http.FileServer(...)` : Crée un serveur de fichiers statiques.
+15. `http.Handle(...)` : Configure le serveur pour servir les fichiers statiques et les routes.
+

@@ -1,0 +1,13 @@
+# portfolio.go
+
+Ce fichier gère le chargement et la manipulation des données du portfolio.
+
+## Commentaires par ligne :
+
+1. `package services` : Déclare que ce fichier fait partie du package services.
+2. `import (...)` : Importe plusieurs packages nécessaires pour le fonctionnement du service.
+3. `type ServicePortfolio struct {` : Déclare une structure pour gérer les données du portfolio.
+4. `cheminDonnees string` : Champ pour stocker le chemin vers le fichier JSON des données.
+5. `func NouveauServicePortfolio(cheminDonnees string) *ServicePortfolio {` : Déclare une fonction pour créer une nouvelle instance de ServicePortfolio.
+6. `return &ServicePortfolio{...}` : Retourne une nouvelle instance de ServicePortfolio avec le chemin des données.
+

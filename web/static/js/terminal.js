@@ -322,18 +322,18 @@ En cours d'apprentissage :
         this.print(`
 Bienvenue sur mon portfolio !
 
-Qui suis-je ?
-------------
+• Qui suis-je ?
+
 Je suis Clément, développeur web en reconversion professionnelle.
 
-Mon parcours
------------
+• Mon parcours
+
 Mon parcours est un peu atypique : j'ai été menuisier et j'ai travaillé
 dans la restauration. Ces expériences m'ont appris la précision,
 l'importance des détails et le travail d'équipe.
 
-Ma passion
----------
+• Ma passion
+
 J'aime particulièrement la phase de conception et la construction de
 solutions, que ce soit en bois ou en code. Cette passion pour la création
 et la résolution de problèmes m'a naturellement conduit vers le

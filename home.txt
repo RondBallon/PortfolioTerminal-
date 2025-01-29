@@ -1,0 +1,16 @@
+# home.go
+
+Ce fichier gère la page d'accueil du portfolio.
+
+## Commentaires par ligne :
+
+1. `package handlers` : Déclare que ce fichier fait partie du package handlers.
+2. `import (...)` : Importe plusieurs packages nécessaires pour le fonctionnement des gestionnaires de page.
+3. `func GererPageAccueil(w http.ResponseWriter, r *http.Request) {` : Déclare la fonction qui gère la requête de la page d'accueil.
+4. `log.Printf(...)` : Journalise l'adresse distante de la requête.
+5. `cheminTemplate := filepath.Join(...)` : Construit le chemin vers le template de la page d'accueil.
+6. `tmpl := template.Must(template.ParseFiles(...))` : Charge le template.
+7. `if err := tmpl.Execute(w, nil) {` : Exécute le template et vérifie les erreurs.
+8. `http.Error(...)` : Envoie une réponse d'erreur si le rendu échoue.
+9. `log.Println(...)` : Journalise que le template a été rendu avec succès.
+

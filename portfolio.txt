@@ -1,0 +1,14 @@
+# portfolio.go
+
+Ce fichier gère les données du portfolio.
+
+## Commentaires par ligne :
+
+1. `package handlers` : Déclare que ce fichier fait partie du package handlers.
+2. `import (...)` : Importe plusieurs packages nécessaires pour le fonctionnement des gestionnaires de données.
+3. `func GererDonneesPortfolio(w http.ResponseWriter, r *http.Request) {` : Déclare la fonction qui gère les requêtes pour les données du portfolio.
+4. `data, err := servicePortfolio.ObtenirDonnees()` : Obtient les données du portfolio.
+5. `if err != nil {` : Vérifie si une erreur a été retournée lors de l'obtention des données.
+6. `http.Error(...)` : Envoie une réponse d'erreur si l'obtention des données échoue.
+7. `json.NewEncoder(w).Encode(data)` : Encode les données en JSON et les envoie dans la réponse.
+

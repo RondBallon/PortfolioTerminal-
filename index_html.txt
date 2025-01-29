@@ -1,0 +1,27 @@
+# index.html
+
+Ce fichier est le template principal de la page d'accueil du portfolio.
+
+## Commentaires par ligne :
+
+1. `<!DOCTYPE html>` : Indique que le document est un document HTML5.
+2. `<html lang="fr">` : Déclare le début du document HTML et spécifie que la langue est le français.
+3. `<head>` : Début de la section d'en-tête du document.
+4. `<meta charset="UTF-8">` : Définit l'encodage des caractères à UTF-8.
+5. `<meta name="viewport" content="width=device-width, initial-scale=1.0">` : Configure la mise en page pour les appareils mobiles.
+6. `<title>Portfolio Terminal</title>` : Définit le titre de la page affiché dans l'onglet du navigateur.
+7. `<link rel="stylesheet" href="/static/css/terminal.css">` : Lien vers le fichier CSS pour les styles de la page.
+8. `<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">` : Lien vers une police de caractères externe.
+9. `</head>` : Fin de la section d'en-tête.
+10. `<body>` : Début de la section principale du document.
+11. `<div class="terminal-window">` : Crée un conteneur pour simuler une fenêtre de terminal.
+12. `<div class="terminal-header">` : Crée un en-tête pour la fenêtre du terminal.
+13. `<div class="terminal-title">portfolio@visiteur: ~</div>` : Titre affiché dans l'en-tête du terminal.
+14. `<div class="terminal-controls">` : Crée un conteneur pour les contrôles de la fenêtre.
+15. `<span class="control minimize">─</span>` : Bouton pour minimiser la fenêtre.
+16. `<span class="control close">×</span>` : Bouton pour fermer la fenêtre.
+17. `</div>` : Fin du conteneur de contrôles.
+18. `</div>` : Fin de l'en-tête du terminal.
+19. `<div id="terminal">` : Crée un conteneur pour le contenu du terminal.
+20. `<div id="terminal-output"></div>` : Conteneur pour afficher la sortie du terminal.
+

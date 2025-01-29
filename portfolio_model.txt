@@ -1,0 +1,17 @@
+# portfolio.go
+
+Ce fichier définit les structures de données du portfolio.
+
+## Commentaires par ligne :
+
+1. `package models` : Déclare que ce fichier fait partie du package models.
+2. `type Project struct {` : Déclare une structure pour représenter un projet.
+3. `Name string \\`json:"name"` : Champ pour le nom du projet.
+4. `Description string \\`json:"description"` : Champ pour la description du projet.
+5. `URL string \\`json:"url"` : Champ pour le lien vers le projet.
+6. `Tech []string \\`json:"tech"` : Champ pour les technologies utilisées.
+7. `type Portfolio struct {` : Déclare une structure pour représenter le portfolio.
+8. `Projects []Project \\`json:"projects"` : Champ pour la liste des projets.
+9. `Github string \\`json:"github"` : Champ pour le lien vers le profil GitHub.
+10. `CV string \\`json:"cv"` : Champ pour le lien vers le CV.
+
