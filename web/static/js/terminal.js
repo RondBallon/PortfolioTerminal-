@@ -28,7 +28,7 @@ class Terminal {
         // Configuration des thèmes de couleur
         this.themes = {
             dark: {
-                background: '1b263b',
+                background: '#1e1e1e',
                 text: '#f0f0f0',
                 prompt: '#00ff00'
             },
