@@ -225,7 +225,7 @@ class Terminal {
 À propos de moi :
 
 • Prénom       : Clément 
-• Âge          : Surement trop vieux pour faire un portfolio terminal :)
+• Âge          : Surement trop vieux pour faire un portfolio terminal 🚮
 • Localisation : France, Lyon 
 
 Stack technique :
