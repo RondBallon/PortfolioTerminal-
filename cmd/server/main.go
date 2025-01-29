@@ -34,7 +34,7 @@ func obtenirCheminProjet() (string, error) {
 		return "", err
 	}
 
-	if strings.HasSuffix(cheminActuel, "cmd\\server") {
+	if strings.HasSuffix(cheminActuel, "cmd/server") {
 		cheminActuel = filepath.Join(cheminActuel, "..", "..")
 	} else if strings.HasSuffix(cheminActuel, "cmd") {
 		cheminActuel = filepath.Join(cheminActuel, "..")
