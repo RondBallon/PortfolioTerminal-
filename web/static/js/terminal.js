@@ -188,7 +188,7 @@ class Terminal {
             }
             const data = await response.json();
             
-            await this.print("\nMes Projets\n", "output");
+            await this.print("\n", "output");
             
             data.projects.forEach((project, index) => {
                 this.print(`
@@ -212,7 +212,8 @@ class Terminal {
     }
 
     clear() {
-        this.output.innerHTML = '';
+        this.output.innerHTML = ''; // Effacer le contenu
+        this.showHelp(); // Afficher l'aide après avoir effacé l'écran !
     }
 
     showCV() {
@@ -334,7 +335,7 @@ En cours d'apprentissage :
     showContact() {
         this.print(`
 📧 Email: clement.ferrandery@gmail.com
-📱 LinkedIn: https://www.linkedin.com/in/clément-ferr/
+📱 LinkedIn: <a class ="a1" href="https://www.linkedin.com/in/clément-ferr/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/clément-ferr/</a>
 🌐 Site Web: rdballon.com
     `, 'contact');
     }

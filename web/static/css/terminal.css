@@ -229,12 +229,13 @@ body {
 }
 
 .contact {
-    color: #3498db;
+    color: #00ff00;
     white-space: pre-wrap;
     margin: 15px 0;
     padding: 15px;
-    background-color: rgba(52, 152, 219, 0.05);
+    background-color: rgba(0, 255, 0, 0.05);
     border-radius: 4px;
+    line-height: 1.5;
 }
 
 .special {
@@ -308,10 +309,24 @@ body {
 a {
     color: #ffffff; /* Couleur de votre choix */
     text-decoration: none; /* Supprime le soulignement */
+    transition: all 0.6s ease; /* Animation douce pour le hover */
 }
 
 /* Pour l'état au survol si vous le souhaitez */
 a:hover {
-    color: #555555; /* Couleur au survol */
+    color: #4dd153; /* Couleur au survol */
     text-decoration: underline; /* Soulignement au survol si désiré */
+    opacity: 0.8; /* Légère transparence au survol */
+}
+
+.a1 {
+    color: #00ff00; /* Couleur bleue de LinkedIn */
+    text-decoration: none; /* Enlève le soulignement par défaut */
+    transition: all 0.6s ease; /* Animation douce pour le hover */
+}
+
+.a1:hover {
+    text-decoration: underline; /* Ajoute le soulignement au survol */
+    opacity: 0.8; /* Légère transparence au survol */
+    color:#4dd153; /* Couleur au survol */
 }
