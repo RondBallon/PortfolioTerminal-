@@ -153,15 +153,15 @@ class Terminal {
         this.print(`Commandes disponibles :`, 'output');
         
         const commands = [
-            ['whoiam', 'Affiche les informations sur moi'],
-            ['help', 'Affiche cette aide'],
-            ['projets', 'Liste les projets'],
-            ['cv', 'Affiche le CV'],
-            ['github', 'Ouvre le profil GitHub'],
-            ['clear', 'Efface l\'écran'],
-            ['skills', 'Affiche mes compétences techniques'],
-            ['contact', 'Affiche mes informations de contact'],
-            ['theme', 'Change le thème du terminal']
+            ['whoiam', 'Affiche des informations sur moi 👀'],
+            ['help', 'Affiche cette aide 👮..💬'],
+            ['projets', 'Liste les projets ⚙️'],
+            ['cv', 'Affiche le CV ✍️'],
+            ['github', 'Ouvre le profil GitHub ♟️'],
+            ['clear', 'Efface l\'écran ⏹'],
+            ['skills', 'Affiche mes compétences techniques ⛏️'],
+            ['contact', 'Affiche mes informations de contact 🕵️'],
+            ['theme', 'Change le thème du terminal 🌖..🌘']
         ];
 
         commands.forEach(([cmd, desc]) => {
@@ -171,8 +171,8 @@ class Terminal {
         this.print(`\nEaster eggs :`, 'output');
         
         const eggs = [
-            ['sudo', 'Tentative d\'élévation de privilèges'],
-            ['42', 'Si tu as du temps et du cerveau à perdre...']
+            ['sudo', 'Tentative d\'élévation de privilèges ✅'],
+            ['42', 'Si tu as du temps et du cerveau à perdre..🤨..🤯']
         ];
 
         eggs.forEach(([cmd, desc]) => {
